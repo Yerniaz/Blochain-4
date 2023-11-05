@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Staking Interface</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<h1>Staking Interface</h1>
+
+<button class="connect-button" onclick="connectToMetaMask()">Connect to MetaMask</button>
+
+<div class="transact-form">
+    <h2>Deposit</h2>
+    <label for="depositAmount">Amount:</label>
+    <input type="text" id="depositAmount" name="depositAmount" placeholder="Amount to Deposit">
+    <button onclick="deposit()">Deposit</button>
+
+    <h2>Stake</h2>
+    <label for="stakeAmount">Amount:</label>
+    <input type="text" id="stakeAmount" name="stakeAmount" placeholder="Amount to Stake">
+    <button onclick="stake()">Stake</button>
+
+    <h2>Withdraw</h2>
+    <button onclick="withdraw()">Withdraw</button>
+</div>
+</body>
+
+</html>
